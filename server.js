@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(initial_path, "index.html"));
 });
 
+app.get("/middle-color", (req, res) => {
+  res.sendFile(path.join(initial_path, "middlecolor.html"));
+});
+
 app.listen("3000", () => {
   console.log("Listening...");
 });

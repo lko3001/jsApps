@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.right,
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100px;
+}
+
+.right {
+  background-color: var(--grey);
+  border-radius: var(--radius);
+}
+
+.chooseColor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.chooseColor > button {
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+    flex-direction: column;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+
+  .chooseColor {
+    align-items: center;
+  }
+}

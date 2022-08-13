@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+.grid {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.gridItem {
+  background-color: var(--accent);
+  padding: var(--padding);
+  border-radius: var(--radius);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+  }
+}
+
+.gridItem:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.gridItem > h2 {
+  margin: 0;
+  word-break: break-all;
+}
+
+.gridItem > h2 > a {
+  color: var(--button);
+}
