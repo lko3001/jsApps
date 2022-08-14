@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/middle-color", (req, res) => {
-  res.sendFile(path.join(initial_path, "middlecolor.html"));
+  res.sendFile(path.join(initial_path, "middle-color.html"));
 });
 
 app.listen("3000", () => {
